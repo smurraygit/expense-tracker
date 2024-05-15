@@ -1,0 +1,311 @@
+{% extends 'myapp/base.html'  %}
+{% block body %}
+{% load static %}
+
+
+
+
+
+<body>
+  <div
+    class="h-screen bg-cover bg-no-repeat bg-center"
+    style="background-image: url('{% static 'images/LandingPageBackground.png' %}');"
+  >
+    <header
+      class="flex justify-between text-2xl text-white font-semibold items-center pt-10 px-24"
+    >
+      <div class="space-x-8">
+        <a href=""> <h1>LOGO</h1></a>
+      </div>
+
+      <div class="flex flex-row space-x-12">
+        <a href="">
+          <h1
+            class="hover:scale-105 duration-150 ease-in-out tracking-wide antialiased underline-animation"
+          >
+            ABOUT
+          </h1></a
+        >
+        <button class="scrollToFormButton hover:scale-105 duration-150 ease-in-out tracking-wide antialiased underline-animation"
+          >
+            CONTACT
+          </button
+        >
+      </div>
+    </header>
+
+    <main class="min-h-screen flex flex-col text-white">
+      <!-- Background Wrapper -->
+      <div class="relative flex-1 p-4 flex justify-center items-center">
+        <div class="max-w-xl mx-auto text-center">
+          <!-- Top Section -->
+          <div class="space-y-8">
+            <div class="text-3xl space-y-4 font-extrabold">
+              <h2>Less Effort</h2>
+              <h2>More Growth</h2>
+              <h2>Lasting Impression</h2>
+            </div>
+            <h2 class="text-5xl font-bold">Guaranteed!</h2>
+          </div>
+
+          <!-- Bottom Section -->
+          <div class="mt-10">
+            <p class="max-w-xl mx-auto text-2xl">
+              Make a great impression and
+              <strong class="font-bold">save time</strong> with our web making
+              expertise—all within a three-figure budget and
+              <strong class="font-bold">no upfront</strong> payment required.
+            </p>
+            <!-- CTA BUTTON-->
+            <div class="mt-8">
+              <button  class="scrollToFormButton glass-container px-8 py-4 text-white font-bold">
+               TAKE ACTION NOW!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+<section class="min-h-screen bg-gray-100">
+    <div class="container mx-auto py-12">
+      <div class="text-center space-y-7">
+        <h1 class="text-4xl uppercase font-extrabold">
+          A website is important...
+        </h1>
+        <p class="max-w-4xl mx-auto text-2xl">
+          We understand your packed to-do list—all the more reason to save
+          time and automate your processes!
+        </p>
+        <h1 class="text-4xl uppercase font-extrabold py-8">
+          “How do I get the most out of it?”
+        </h1>
+      </div>
+ 
+      <!-- Badge Section -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12">
+        <!-- Badge 1 -->
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+          <img
+            src="{% static 'images/Icons/one-person-icon.avif'  %}"
+            alt="Badge 1"
+            class="w-32 mx-auto mb-4"
+          />
+          <h2 class="text-2xl font-bold">"Do everything yourself?"</h2>
+          <p class="text-lg italic mt-4">
+            If you have limited time, this may not be the ideal option.
+          </p>
+        </div>
+
+        <!-- Badge 2 -->
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+          <img
+            src="{% static 'images/Icons/two-people.avif' %}"
+            alt="Badge 2"
+            class="w-32 mx-auto mb-4"
+          />
+          <h2 class="text-2xl font-bold">“Hire Someone?”</h2>
+          <p class="text-lg italic mt-4">
+            Hiring and training are costly. Relying on one person is risky.
+          </p>
+        </div>
+
+        <!-- Badge 3 -->
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+          <img
+          src="{% static 'images//Icons/agency-icon.avif' %}"
+            alt="Badge 3"
+            class="w-32 mx-auto mb-4"
+          />
+          <h2 class="text-2xl font-bold">"Get An Agency?"</h2>
+          <p class="text-lg italic mt-4">
+            No big HIGH budget? Choose quality without the high cost.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="min-h-screen py-10">
+    <div class="min-h-screen container mx-auto">
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          <div>
+            <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+              Our Pricing
+            </p>
+          </div>
+          <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            <span class="relative inline-block">
+              <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                <defs>
+                  <pattern id="7e5e8ff8-1960-4094-a63a-2a0c0f922d69" x="0" y="0" width=".135" height=".30">
+                    <circle cx="1" cy="1" r=".7"></circle>
+                  </pattern>
+                </defs>
+                <rect fill="url(#7e5e8ff8-1960-4094-a63a-2a0c0f922d69)" width="52" height="24"></rect>
+              </svg>
+              <span class="relative">Transparent</span>
+            </span>
+            pricing. Pay as you grow.
+          </h2>
+          <p class="text-base text-gray-700 md:text-lg">
+            When starting, there is no <strong class="font-bold">upfront cost</strong>. We'll just provide your website, and when you're happy, you can own it.
+          </p>
+        </div>
+        <div class="grid max-w-md gap-10 row-gap-5 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-3 xl:max-w-screen-lg sm:mx-auto">
+          <div class="flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border rounded shadow-2xl sm:items-center hover:shadow">
+            <div class="text-center">
+              <h1 class="text-lg font-semibold">Starter</h1>
+              <div class="flex items-center justify-center mt-2">
+                <div class="mr-1 text-5xl font-bold">179£</div>
+              </div>
+              <ul class="mt-2 space-y-3">
+                <li class="text-gray-700">One Page Site</li>
+                <li>Contact Form</li>
+                <li class="text-gray-700">Choose From Templates</li>
+                <li class="text-gray-700">Three days-delivery</li>
+              </ul>
+            </div>
+            <div>
+              <button class="scrollToFormButton inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none">
+                Contact Business
+              </button>
+              <p class="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
+                Perfect for portfolios, contact pages, and resumes.
+              </p>
+            </div>
+          </div>
+          <div class="relative flex flex-col justify-between p-8 transition-shadow shadow-2xl duration-300 bg-white border rounded sm:items-center hover:shadow border-deep-purple-accent-400">
+            <div class="absolute inset-x-0 top-0 flex justify-center -mt-3">
+              <div class="inline-block px-3 py-1 text-xs font-medium tracking-wider text-white uppercase rounded bg-deep-purple-accent-400">
+                Most Popular
+              </div>
+            </div>
+            <div class="text-center">
+              <h1 class="text-lg font-semibold">Standard Plan</h1>
+              <div class="flex items-center justify-center mt-2">
+                <div class="mr-1 text-5xl font-bold">579£</div>
+              </div>
+              <ul class="mt-2 space-y-3">
+                <li class="text-gray-700">Five-Seven Pages Site</li>
+                <li class="font-bold">Customised Design</li>
+                <li class="text-gray-700">Contact Form</li>
+                <li class="text-black font-bold">Google Maps Integration</li>
+                <li class="font-bold">Invoice Generator</li>
+                <li class="text-gray-700">Four-Five days-delivery</li>
+                
+                
+              </ul>
+            </div>
+            <div>
+              <button  class="scrollToFormButton inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none">
+                Contact Business
+              </button>
+              <p class="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
+                Perfect for local removal companies, ecommerce, and brand startups.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-between p-8 transition-shadow duration-300 bg-white  border rounded shadow-2xl sm:items-center hover:shadow">
+            <div class="text-center">
+              <h1 class="text-lg font-semibold">Premium Plan</h1>
+              <div class="flex items-center justify-center mt-2">
+                <div class="mr-1 text-5xl font-bold">1319£</div>
+              </div>
+              <ul class="mt-2 space-y-3">
+                <li class="text-gray-700">Ten-Eleven Pages Site</li>
+                <li class="text-gray-700">Customised Design</li>
+                <li class="text-gray-700">Contact Form</li>
+                <li class="font-bold">Statistics</li>
+                <li class="text-gray-700">Google Maps Integrations</li>
+                <li class="font-bold">Instant Price Calculator</li>
+                <li class="font-bold">Free Business Email</li>
+                <li class="text-gray-700">Invoice Generator</li>
+                <li class="text-gray-700">Three-Four days-delivery</li>
+              </ul>
+            </div>
+            <div>
+              <button  class="scrollToFormButton inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 glass-container rounded shadow-md focus:shadow-outline focus:outline-none">
+                Contact Business
+              </button>
+              <p class="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
+                Perfect for removal companies, ecommerce business, and brand startups.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="min-h-screen">
+    <!-- Main Divider-->
+    <div class="min-h-screen container mx-auto flex">
+     
+      <form id="myForm" class="justify-center w-2/3 h-1/2 mx-auto space-y-8 p-6 shadow-md rounded-lg">
+        <!-- Contact Information -->
+        <div>
+          <h2 class="text-lg font-semibold text-gray-900 text-center">Contact Information</h2>
+      
+          <div class="mt-6 grid grid-cols-1 gap-y-6">
+            <div>
+              <label for="email" class="block text-sm font-medium leading-5 text-gray-700">Email Address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required class="block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out">
+            </div>
+      
+            <div>
+              <label for="phone" class="block text-sm font-medium leading-5 text-gray-700">Phone Number</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required class="block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out">
+            </div>
+      
+            <div>
+              <label for="plan" class="block text-sm font-medium leading-5 text-gray-700">Preferred Plan</label>
+              <select id="plan" name="plan" required class="block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out">
+                <option value="starter">Starter</option>
+                <option value="professional">Standard Plan</option>
+                <option value="business">Premium Plan</option>
+              </select>
+            </div>
+      
+            <div id="customizationInput" class="hidden">
+              <label for="customization" class="block text-sm font-medium leading-5 text-gray-700">Customization Details</label>
+              <textarea id="customization" name="customization" rows="3" class="block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out"></textarea>
+              <p class="mt-2 text-sm text-gray-600">Please describe how you'd like the plan to be customized.</p>
+            </div>
+      
+            <div>
+              <label for="preferredDate" class="block text-sm font-medium leading-5 text-gray-700">Preferred Date</label>
+              <input id="preferredDate" name="preferredDate" type="date" required class="block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out">
+            </div>
+          </div>
+        </div>
+      
+        <!-- Submit Button -->
+        <div class="mt-6">
+          <button type="submit" class="w-full glass-container hover:scale-110 duration-150 ease-in-out  text-white font-semibold py-2 px-4 rounded-md focus:outline-none">Submit</button>
+        </div>
+      </form>
+      
+    
+      
+      
+    </div>
+  </section>
+</div>
+
+
+
+
+
+
+{% endblock  %}
