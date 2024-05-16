@@ -18,9 +18,14 @@
 </head>
 <body>
 
+  <!--navbar-->
+    {%  include 'includes/navbar.html' %}
+
     {% block body %}
     
     {% endblock %}
+
+    {%  include 'includes/footer.html' %}
     
     <script src="{% static 'myapp/script.js' %}" type="text/javascript"></script>
   </body>

@@ -1,4 +1,4 @@
-{% extends 'myapp/base.html'  %}
+{% extends 'myapp/base.html' %}
 {% block body %}
 {% load static %}
 
@@ -14,29 +14,25 @@
     <header
       class="flex justify-between text-2xl text-white font-semibold items-center pt-10 px-24"
     >
-      <div class="space-x-8">
-        <a href=""> <h1>LOGO</h1></a>
-      </div>
 
-      <div class="flex flex-row space-x-12">
-        <a href="">
-          <h1
-            class="hover:scale-105 duration-150 ease-in-out tracking-wide antialiased underline-animation"
-          >
-            ABOUT
-          </h1></a
-        >
-        <button class="scrollToFormButton hover:scale-105 duration-150 ease-in-out tracking-wide antialiased underline-animation"
-          >
-            CONTACT
-          </button
-        >
-      </div>
+
+
+
+
+
     </header>
+
+<!-- component -->
+
+
+
+
+
+    
 
     <main class="min-h-screen flex flex-col text-white">
       <!-- Background Wrapper -->
-      <div class="relative flex-1 p-4 flex justify-center items-center">
+      <div class="relative flex-1 p-2 flex justify-center items-center">
         <div class="max-w-xl mx-auto text-center">
           <!-- Top Section -->
           <div class="space-y-8">
@@ -58,10 +54,10 @@
             </p>
             <!-- CTA BUTTON-->
             <div class="mt-8">
-              <button  class="scrollToFormButton glass-container px-8 py-4 text-white font-bold">
-               TAKE ACTION NOW!
-              </button>
-            </div>
+              <a href="{% url 'contact' %}" class="glass-container px-8 py-4 text-white font-bold">
+                  TAKE ACTION NOW!
+              </a>
+          </div>
           </div>
         </div>
       </div>
@@ -177,9 +173,9 @@
               </ul>
             </div>
             <div>
-              <button class="scrollToFormButton inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none">
+              <a href="{% url 'contact' %}" class="scrollToFormButton inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none">
                 Contact Business
-              </button>
+            </a>
               <p class="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                 Perfect for portfolios, contact pages, and resumes.
               </p>
@@ -208,9 +204,9 @@
               </ul>
             </div>
             <div>
-              <button  class="scrollToFormButton inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none">
+              <a href="{% url 'contact' %}" class="scrollToFormButton inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none">
                 Contact Business
-              </button>
+            </a>
               <p class="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                 Perfect for local removal companies, ecommerce, and brand startups.
               </p>
@@ -235,9 +231,9 @@
               </ul>
             </div>
             <div>
-              <button  class="scrollToFormButton inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 glass-container rounded shadow-md focus:shadow-outline focus:outline-none">
+              <a href="{% url 'contact' %}" class="scrollToFormButton inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 glass-container rounded shadow-md focus:shadow-outline focus:outline-none">
                 Contact Business
-              </button>
+            </a>
               <p class="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                 Perfect for removal companies, ecommerce business, and brand startups.
               </p>
@@ -248,64 +244,11 @@
     </div>
   </section>
   
-  <section class="min-h-screen">
-    <!-- Main Divider-->
-    <div class="min-h-screen container mx-auto flex">
-     
-      <form id="myForm" class="justify-center w-2/3 h-1/2 mx-auto space-y-8 p-6 shadow-md rounded-lg">
-        <!-- Contact Information -->
-        <div>
-          <h2 class="text-lg font-semibold text-gray-900 text-center">Contact Information</h2>
-      
-          <div class="mt-6 grid grid-cols-1 gap-y-6">
-            <div>
-              <label for="email" class="block text-sm font-medium leading-5 text-gray-700">Email Address</label>
-              <input id="email" name="email" type="email" autocomplete="email" required class="block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out">
-            </div>
-      
-            <div>
-              <label for="phone" class="block text-sm font-medium leading-5 text-gray-700">Phone Number</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel" required class="block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out">
-            </div>
-      
-            <div>
-              <label for="plan" class="block text-sm font-medium leading-5 text-gray-700">Preferred Plan</label>
-              <select id="plan" name="plan" required class="block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out">
-                <option value="starter">Starter</option>
-                <option value="professional">Standard Plan</option>
-                <option value="business">Premium Plan</option>
-              </select>
-            </div>
-      
-            <div id="customizationInput" class="hidden">
-              <label for="customization" class="block text-sm font-medium leading-5 text-gray-700">Customization Details</label>
-              <textarea id="customization" name="customization" rows="3" class="block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out"></textarea>
-              <p class="mt-2 text-sm text-gray-600">Please describe how you'd like the plan to be customized.</p>
-            </div>
-      
-            <div>
-              <label for="preferredDate" class="block text-sm font-medium leading-5 text-gray-700">Preferred Date</label>
-              <input id="preferredDate" name="preferredDate" type="date" required class="block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out">
-            </div>
-          </div>
-        </div>
-      
-        <!-- Submit Button -->
-        <div class="mt-6">
-          <button type="submit" class="w-full glass-container hover:scale-110 duration-150 ease-in-out  text-white font-semibold py-2 px-4 rounded-md focus:outline-none">Submit</button>
-        </div>
-      </form>
-      
-    
-      
-      
-    </div>
-  </section>
+  
 </div>
 
 
 
 
 
-
-{% endblock  %}
+{% endblock %}

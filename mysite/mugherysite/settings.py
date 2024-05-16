@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp',
+    'contact',
+    'mugherysite',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +58,10 @@ ROOT_URLCONF = 'mugherysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates')
+
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,6 +131,23 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'mail.privateemail.com'  # Replace with your provider's host
+# EMAIL_PORT = 993  # Common port for TLS, can vary for different providers
+# EMAIL_USE_TLS = True  # Use a secure connection
+
+# If authentication is required
+# EMAIL_HOST_USER = 'info@mugheryweb.com'
+# EMAIL_HOST_PASSWORD = 'arshad02'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'saeed.murray@gmail.com'
+EMAIL_HOST_PASSWORD = 'xruebeiqgoujnxpq'
+EMAIL_USE_TLS = True
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
@@ -134,4 +157,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # arshad02
 
 # source ./env/scripts/activate
+# cd mysite
 # py manage.py runserver
