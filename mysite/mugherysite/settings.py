@@ -133,13 +133,16 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'mail.privateemail.com'  # Replace with your provider's host
-# EMAIL_PORT = 993  # Common port for TLS, can vary for different providers
-# EMAIL_USE_TLS = True  # Use a secure connection
+
+# EMAIL_HOST = 'mail.privateemail.com'
+# EMAIL_PORT = 465
+# EMAIL_HOST_USER = 'info@mugheryweb.com'
+
 
 # If authentication is required
-# EMAIL_HOST_USER = 'info@mugheryweb.com'
+# EMAIL_USE_SSL = True
 # EMAIL_HOST_PASSWORD = 'arshad02'
+
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
